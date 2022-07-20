@@ -4,7 +4,7 @@ import express from "express";
 import cors from "cors";
 //express app/server that can receive http(s) requests & send back responses
 //This app/server is deaf
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.listen(PORT, () => {
